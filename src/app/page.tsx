@@ -1,7 +1,8 @@
-import cfg from "../../sirizone.config.json";
+import cfgRaw from "../../sirizone.config.json";
 import Analytics from "../modules/analytics/Analytics";
 import Blog from "../modules/blog/BlogPreview";
 
+const cfg: any = cfgRaw;
 const enabled = (m: string) => (cfg.modules_enabled || []).includes(m);
 
 export default function Page() {

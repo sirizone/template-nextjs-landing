@@ -1,4 +1,5 @@
-import cfg from "../../../sirizone.config.json";
+import cfgRaw from "../../../sirizone.config.json";
+const cfg: any = cfgRaw;
 export default function BlogPreview() {
   const posts = cfg.content?.blog_posts || [{ title: "Welcome", excerpt: "First post." }];
   return (
